@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/amor.ico" type="image/x-icon">
+    <title>Juego - Puzzle</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/puzzle.css" />
+  </head>
+  <body>
+    <div class="cover-screen">
+      <p id="result"></p>
+      <p>Hasta que elijas qué comer, te dejo este puzzle jiji.</p>
+      <p>Espero puedas resolverlo.</p>
+      <p>Si al completarlo no sale un mensaje que ganaste, puedes regresar nomás :'v</p>
+      <p>Es el que más costó programar, así que puede que tenga sus pequeñas fallas jeje.</p>
+      <br>
+      <button id="start-button">Empezar</button>
+    </div>
+    <div id="moves"></div>
+    <div class="slider-game">
+      <div class="container"></div>
+      <div class="original-image">
+        <img src="./img/taylor.png" alt="" />
+      </div>
+    </div>
+    <div class="regresar">
+      <button id="regresar" class="btn-regresar">Regresar</button>
+    </div>
+    <!-- Script -->
+    <script src="./js/puzzle.js"></script>
+    <script type="text/javascript">
+      var regresar = document.getElementById("regresar");
+      regresar.addEventListener("click", function() {
+          window.location.href = "menu.html";
+      });
+    </script>
+  </body>
+</html>
